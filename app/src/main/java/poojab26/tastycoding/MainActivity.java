@@ -1,5 +1,6 @@
 package poojab26.tastycoding;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        playAudio();
 
         textSwitcher = (TextSwitcher) findViewById(R.id.textSwitcher);
         layout = (LinearLayout) findViewById(R.id.layout);
@@ -55,8 +57,18 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 textSwitcher.setText(textSwitcherText[counter]);
                 counter++;
+                stopAudio();
             }
         }, 100);
+    }
+    public void playAudio() {
+        Intent objIntent = new Intent(this, PlayAudio.class);
+        startService(objIntent);
+    }
+
+    public void stopAudio() {
+        Intent objIntent = new Intent(this, PlayAudio.class);
+        stopService(objIntent);
     }
 }
 
