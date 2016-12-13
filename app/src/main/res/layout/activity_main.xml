@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:gravity="center_horizontal"
-    android:onClick="nextText"
     android:orientation="vertical">
 
 
@@ -17,13 +16,12 @@
         android:layout_marginBottom="30dp"
         android:layout_marginTop="50dp" />
 
-    <Button
-        android:id="@+id/nextButton"
+    <VideoView
+        android:id="@+id/videoView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:onClick="nextButton"
-        android:text="Next Text" />
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
 
 
 </LinearLayout>
