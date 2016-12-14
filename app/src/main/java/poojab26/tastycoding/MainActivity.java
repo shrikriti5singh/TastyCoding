@@ -1,44 +1,27 @@
 package poojab26.tastycoding;
 
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.MediaController;
-import android.widget.TextSwitcher;
-import android.widget.VideoView;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextSwitcher textSwitcher;
-    VideoView videoView;
-    int counter = 0;
-
+    Button btnlesson1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activiy_main);
 
-        textSwitcher = (TextSwitcher) findViewById(R.id.textSwitcher);
-        videoView =(VideoView)findViewById(R.id.videoView1);
-
-        playVideo();
-
-    }
-
-    public void playVideo()
-    {
-        //Creating MediaController
-        MediaController mediaController= new MediaController(this);
-        mediaController.setAnchorView(videoView);
-
-        //specify the location of media file
-        Uri uri=Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.h);
-
-        //Setting MediaController and URI, then starting the videoView
-        videoView.setMediaController(mediaController);
-        videoView.setVideoURI(uri);
-        videoView.requestFocus();
-        videoView.start();
+        btnlesson1 = (Button)findViewById(R.id.less1);
+        btnlesson1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecipeLessons.class);
+                startActivity(intent);
+            }
+        });
     }
     }
 
