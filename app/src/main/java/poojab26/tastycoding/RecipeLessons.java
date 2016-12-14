@@ -30,7 +30,7 @@ public class RecipeLessons extends Activity {
         mediaController.setAnchorView(videoView);
 
         //specify the location of media file
-        Uri uri=Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.h);
+        Uri uri=Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.lesson1);
 
         //Setting MediaController and URI, then starting the videoView
         videoView.setMediaController(mediaController);
