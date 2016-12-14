@@ -13,5 +13,65 @@
         android:textSize="20sp"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 2"
+        android:id="@+id/less2"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 3"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/less3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 4"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/less4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 5"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/less5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 6"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/less6" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#ffcc00"
+        android:text="LESSON 7"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/less7" />
+
 
 </LinearLayout>
