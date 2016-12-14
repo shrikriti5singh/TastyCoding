@@ -11,17 +11,17 @@ import poojab26.tastycoding.R;
  * Created by pblead26 on 14-Dec-16.
  */
 public class LessonOne extends Activity {
-    EditText getText;
+    EditText gettxt;
     TextView textB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activiy_main);
+        setContentView(R.layout.python_one);
 
-        getText = (EditText) findViewById(R.id.getText);
+        gettxt = (EditText) findViewById(R.id.gettext);
         textB = (TextView) findViewById(R.id.textB);
 
-        String text = getText.getText().toString();
+        String text = gettxt.getText().toString();
         if (text.equals("milk = 1")){
             textB.setText("You are right");
 

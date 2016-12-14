@@ -45,7 +45,7 @@ public class RecipeLessons extends Activity {
             videoView.start();
         }
         if(s=="2"){
-            uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.lesson1);
+            uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.lesson2);
 
             //Setting MediaController and URI, then starting the videoView
             videoView.setMediaController(mediaController);
@@ -56,4 +56,3 @@ public class RecipeLessons extends Activity {
 
     }
 }
-

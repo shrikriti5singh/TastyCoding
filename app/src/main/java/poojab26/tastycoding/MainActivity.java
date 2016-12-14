@@ -8,9 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import poojab26.tastycoding.LessonsQuizPython.LessonOne;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button btnlesson1,btnlesson2,btnlesson3,btnlesson4,btnlesson5,btnlesson6,btnlesson7;
+    Button btnlesson1,btnlesson2,btnlesson3,btnlesson4,btnlesson5,btnlesson6,btnlesson7,python;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, RecipeLessons.class);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
                 prefs.edit().putString("lesson", "2").commit();
+                startActivity(intent);
+            }
+        });
+        python=(Button)findViewById(R.id.less8);
+        python.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LessonOne.class);
                 startActivity(intent);
             }
         });

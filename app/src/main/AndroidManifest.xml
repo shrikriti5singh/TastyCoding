@@ -18,6 +18,7 @@
 
         </activity>
         <activity android:name=".RecipeLessons"></activity>
+        <activity android:name=".LessonsQuizPython.LessonOne"></activity>
     </application>
 
 </manifest>
